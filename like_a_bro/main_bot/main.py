@@ -1,7 +1,6 @@
-import telegram
-from telegram.ext import (CallbackContext, CommandHandler, Filters, MessageHandler, Updater)
-from telegram import (KeyboardButton, InlineKeyboardButton, InlineKeyboardMarkup)
-from test import token_bot
+from telegram.ext import (CommandHandler, Filters, MessageHandler, Updater)
+from telegram import (InlineKeyboardButton)
+from like_a_bro.test import token_bot
 
 #def start_bot(context, )
 
