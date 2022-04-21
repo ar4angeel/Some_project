@@ -11,6 +11,7 @@ Operator's precedence:
 
 
 operators = ["(",")","*","/","*","+","-"]
+
 numbers = []
 position = []
 
