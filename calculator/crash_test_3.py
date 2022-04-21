@@ -17,21 +17,13 @@ position = []
 def brackets(a):
     num_in_brackets = []
     pos_in_brackets = []
+    pos_of_brackets = []
     n = 0
     for i in a:
-        if i == "(":
-            while i != ")":
-                if i != ")":
-                    if i in [int,float]:
-                        var = float(i)
-                        num_in_brackets.append(var)
-                    else:
-                        num_in_brackets.append(i)
-                    pos_in_brackets.append(n)
-                else:
-                    print(num_in_brackets, "\n", pos_in_brackets)
+        if i in ["(",")"]:
+            pos_of_brackets.append(n)
         n = n + 1
-
+    print(pos_of_brackets)
     return (num_in_brackets,pos_in_brackets)
 def addition(a):
     c = a + b
