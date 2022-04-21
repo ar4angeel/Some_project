@@ -16,6 +16,7 @@ position = []
 
 def brackets(a):
     num_in_brackets = []
+
     pos_in_brackets = []
 
     pos_of_brackets = []
