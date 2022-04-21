@@ -21,12 +21,15 @@ def brackets(a):
     for i in a:
         if i == "(":
             while i != ")":
-                if i in [int,float]:
-                    var = float(i)
-                    num_in_brackets.append(var)
+                if i != ")":
+                    if i in [int,float]:
+                        var = float(i)
+                        num_in_brackets.append(var)
+                    else:
+                        num_in_brackets.append(i)
+                    pos_in_brackets.append(n)
                 else:
-                    num_in_brackets.append(i)
-                pos_in_brackets.append(n)
+                    print(num_in_brackets, "\n", pos_in_brackets)
         n = n + 1
 
     return (num_in_brackets,pos_in_brackets)
@@ -109,4 +112,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    brackets(input())
