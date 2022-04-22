@@ -14,6 +14,7 @@ operators = ["(",")","*","/","*","+","-"]
 
 numbers = []
 
+
 position = []
 
 def brackets(a):
