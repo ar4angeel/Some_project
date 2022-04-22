@@ -13,6 +13,7 @@ Operator's precedence:
 operators = ["(",")","*","/","*","+","-"]
 
 numbers = []
+
 position = []
 
 def brackets(a):
